@@ -1,0 +1,30 @@
+{
+  "name": "mykop",
+  "version": "1.0.0",
+  "description": "Projet de stage réalisation d'un site de vente en ligne d'artcles de sport",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cdevlopez/MyKop.git"
+  },
+  "keywords": [
+    "football",
+    "sport",
+    "maillot",
+    "vente",
+    "en",
+    "ligne"
+  ],
+  "author": "cdevlopez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cdevlopez/MyKop/issues"
+  },
+  "homepage": "https://github.com/cdevlopez/MyKop#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
