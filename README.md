@@ -16,7 +16,7 @@ Installation et conditions préalables
 NodeJs et Express doivent être installés pour le fonctionnement côté serveur notamment pour l'API générale.
 https://nodejs.org/fr/download/
 
-Angular pour le Front https://angular.io/docs 
+Angular 10.0.2 pour le Front https://angular.io/docs 
 
 Bootsrtrap 4.5 pour le CSS. https://getbootstrap.com/
 
