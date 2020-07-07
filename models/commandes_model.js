@@ -1,6 +1,3 @@
-//  importer la connexion à la db
-//  const database = require('../database');
-
 const dbsequelize = require('../models/db');
 const Sequelize = require('sequelize');
 
