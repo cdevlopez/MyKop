@@ -1,13 +1,8 @@
-// assure la mise en route d'express
-let express = require('express');
-let app = express();
-
-app.get('/', function (req, res) {
-    res.send('Yo MyKop');
-  });
-
-app.listen(4000, function () {
-    console.log("Serveur lancé sur le port 4000");
-  });
-
-  
+// app contient express
+const app = require('./app');
+// On défini le port souhaité
+const port = 4000;
+// On demande d'écouter le port en question
+app.listen(port, () => {
+    console.log(`connexion ok sur le port ${port}`);
+})
