@@ -17,8 +17,9 @@ const Com = dbsequelize.define('commande', {
         allowNull: false
     }
 }, {
-    timestamps: false
+    timestamps: false,
 }
+
 );
 
 module.exports = Com;

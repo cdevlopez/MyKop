@@ -26,6 +26,7 @@ exports.create_account = (req, res) => {
       numClient: req.body.numClient,
       lastName: req.body.lastName,
       firstName: req.body.firstName,
+      email: req.body.email,
       address: req.body.address,
       telNumber: req.body.telNumber
     }
@@ -45,6 +46,7 @@ exports.update_account = (req, res) => {
     numClient: req.body.numClient,
     lastName: req.body.lastName,
     firstName: req.body.firstName,
+    email: req.body.email,
     address: req.body.address,
     telNumber: req.body.telNumber
     },
