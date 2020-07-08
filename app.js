@@ -14,10 +14,14 @@ app.use(bodyParser.json());
 
 const accountsRoutes = require('./routes/accounts_route');
 const commandeRoutes = require('./routes/commande_route');
+const productRoutes = require('./routes/products_route');
+const packRoutes = require('./routes/packs_route');
 const { urlencoded } = require('body-parser');
 
 app.use(accountsRoutes);
 app.use(commandeRoutes);
+app.use(productRoutes);
+app.use(packRoutes);
 
 //  exporter le module qui utilise express
 module.exports = app;

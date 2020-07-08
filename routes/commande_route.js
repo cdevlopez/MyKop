@@ -4,7 +4,7 @@ const comController = require('../controllers/commandes_controller');
 const router = express.Router();
 
 /////////////////////////////
-// Get All commandes Test Function (postman)
+// Get All commandes Test Requests (postman)
 router.get('/', comController.get_all_commande);
 // Get All commandes
 router.get('/commande', comController.get_all_commande);

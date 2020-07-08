@@ -4,7 +4,7 @@ const accountController = require('../controllers/accounts_controller');
 const router = express.Router();
 
 /////////////////////////////
-// Get All accounts Test Function (postman)
+// Get All accounts Test Requests (postman)
 router.get('/', accountController.get_all_account);
 // Get All accounts
 router.get('/accounts', accountController.get_all_account);
