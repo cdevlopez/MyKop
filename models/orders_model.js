@@ -1,18 +1,18 @@
-const dbsequelize = require('../models/db');
+const dbsequelize = require('./db');
 const Sequelize = require('sequelize');
 
-const Com = dbsequelize.define('commande', {
-    idCommande: {
+const orders = dbsequelize.define('orders', {
+    idOrder: {
         type: Sequelize.INTEGER,
         allowNull: false,
         primaryKey: true,
         autoIncrement: true
     },
-    numCommande: {
+    numOrder: {
         type: Sequelize.INTEGER,
         allowNull: false
     },
-    dateCommande: {
+    dateOrder: {
         type: Sequelize.DATE,
         allowNull: false
     }
@@ -22,4 +22,4 @@ const Com = dbsequelize.define('commande', {
 
 );
 
-module.exports = Com;
+module.exports = orders;

@@ -13,15 +13,17 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 const accountsRoutes = require('./routes/accounts_route');
-const commandeRoutes = require('./routes/commande_route');
-const productRoutes = require('./routes/products_route');
-const packRoutes = require('./routes/packs_route');
+const ordersRoutes = require('./routes/orders_route');
+const ordersPlacedRoutes = require('./routes/ordersPlaced_route');
+const productsRoutes = require('./routes/products_route');
+const packsRoutes = require('./routes/packs_route');
 const { urlencoded } = require('body-parser');
 
 app.use(accountsRoutes);
-app.use(commandeRoutes);
-app.use(productRoutes);
-app.use(packRoutes);
+app.use(ordersRoutes);
+app.use(ordersPlacedRoutes);
+app.use(productsRoutes);
+app.use(packsRoutes);
 
 //  exporter le module qui utilise express
 module.exports = app;
