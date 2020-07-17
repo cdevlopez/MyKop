@@ -1,6 +1,6 @@
 const dbsequelize = require('./db');
 const Sequelize = require('sequelize');
-const { tableName } = require('./accounts_model');
+const { tableName } = require('./ordersPlaced_model');
 
 const ordersPlaced = dbsequelize.define('orders_placed', {
     idOrdersPlaced: {
@@ -21,7 +21,6 @@ const ordersPlaced = dbsequelize.define('orders_placed', {
     timestamps: false,
     tableName: 'orders_placed'
 }
-
 );
 
 module.exports = ordersPlaced;

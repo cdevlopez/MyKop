@@ -17,6 +17,7 @@ const ordersRoutes = require('./routes/orders_route');
 const ordersPlacedRoutes = require('./routes/ordersPlaced_route');
 const productsRoutes = require('./routes/products_route');
 const packsRoutes = require('./routes/packs_route');
+const usersRoutes = require('./routes/users_routes');
 const { urlencoded } = require('body-parser');
 
 app.use(accountsRoutes);
@@ -24,6 +25,7 @@ app.use(ordersRoutes);
 app.use(ordersPlacedRoutes);
 app.use(productsRoutes);
 app.use(packsRoutes);
+app.use(usersRoutes);
 
 //  exporter le module qui utilise express
 module.exports = app;

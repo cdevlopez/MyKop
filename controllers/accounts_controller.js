@@ -11,7 +11,7 @@ exports.get_all_account = (req, res) => {
 /////////////////////////////
 // Get One Account
 exports.get_one_account = (req, res) => {
-  const id = req.params.id;
+  const id =      req.params.id;
   Account.findByPk(id).then((accounts) => {
     console.log(this.get_all_account);
     res.send(accounts);
@@ -23,12 +23,12 @@ exports.get_one_account = (req, res) => {
 //  Create account
 exports.create_account = (req, res) => {
   Account.create({
-      numClient: req.body.numClient,
-      lastName: req.body.lastName,
-      firstName: req.body.firstName,
-      email: req.body.email,
-      address: req.body.address,
-      telNumber: req.body.telNumber
+      numClient:  req.body.numClient,
+      lastName:   req.body.lastName,
+      firstName:  req.body.firstName,
+      email:      req.body.email,
+      address:    req.body.address,
+      telNumber:  req.body.telNumber
     }
   ).then(() => {
     res.send('enregistré');
@@ -39,16 +39,16 @@ exports.create_account = (req, res) => {
 /////////////////////////////
 //  Update account
 exports.update_account = (req, res) => {
-  const id = req.params.id;
+  const id =    req.params.id;
 
   Account.update({
-    idClient: req.body.idClient,
-    numClient: req.body.numClient,
-    lastName: req.body.lastName,
-    firstName: req.body.firstName,
-    email: req.body.email,
-    address: req.body.address,
-    telNumber: req.body.telNumber
+    idClient:   req.body.idClient,
+    numClient:  req.body.numClient,
+    lastName:   req.body.lastName,
+    firstName:  req.body.firstName,
+    email:      req.body.email,
+    address:    req.body.address,
+    telNumber:  req.body.telNumber
     },
     {
       where: {
@@ -64,7 +64,7 @@ exports.update_account = (req, res) => {
 /////////////////////////////
 // Delete Account
 exports.delete_account = (req, res) => {
-    const id = req.params.id;
+    const id =  req.params.id;
 
     Account.destroy({
       where: { 
@@ -77,3 +77,5 @@ exports.delete_account = (req, res) => {
     res.status(400).send(err);
   });
 };
+
+
